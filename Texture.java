@@ -8,4 +8,11 @@ public class Texture {
 	private String loc;
 	public final int SIZE;
 
+    public Texture(String location, int size) {
+		loc = location;
+		SIZE = size;
+		pixels = new int[SIZE * SIZE];
+		load();
+	}
+
     
