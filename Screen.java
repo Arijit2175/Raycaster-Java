@@ -15,4 +15,6 @@ public class Screen {
 		height = h;
 	}
 
-    
+    public int[] update(Camera camera, int[] pixels) {
+        
+    }
