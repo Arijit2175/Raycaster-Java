@@ -90,6 +90,5 @@ Here are the references used for this project:
 - [Stack Overflow – Basic Java Game Loop](https://stackoverflow.com/questions/31039816/how-to-create-a-basic-game-loop-in-java) - Useful discussion on how to structure a simple game loop in Java for real-time rendering.
 
 ---
-<br>
 
 👨‍💻 **Developed by** - @Arijit2175
