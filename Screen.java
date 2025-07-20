@@ -41,4 +41,16 @@ public class Screen {
             int stepX, stepY;
 		    boolean hit = false;
 		    int side=0;
+
+            if (rayDirX < 0)
+		    {
+		    	stepX = -1;
+		    	sideDistX = (camera.xPos - mapX) * deltaDistX;
+		    }
+		    else
+		    {
+		    	stepX = 1;
+		    	sideDistX = (mapX + 1.0 - camera.xPos) * deltaDistX;
+		    }
+            
     }
