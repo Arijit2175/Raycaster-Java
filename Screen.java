@@ -38,5 +38,7 @@ public class Screen {
 		    double deltaDistY = Math.sqrt(1 + (rayDirX*rayDirX) / (rayDirY*rayDirY));
 		    double perpWallDist;
 
-            
+            int stepX, stepY;
+		    boolean hit = false;
+		    int side=0;
     }
