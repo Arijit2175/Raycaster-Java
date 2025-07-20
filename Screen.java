@@ -63,5 +63,19 @@ public class Screen {
 		        sideDistY = (mapY + 1.0 - camera.yPos) * deltaDistY;
 		    }
 
-            
+            while(!hit) {
+		    	//Jump to next square
+		    	if (sideDistX < sideDistY)
+		        {
+		    		sideDistX += deltaDistX;
+		    		mapX += stepX;
+		    		side = 0;
+		        }
+		        else
+		        {
+		        	sideDistY += deltaDistY;
+		        	mapY += stepY;
+		        	side = 1;
+		        }
+                
     }
