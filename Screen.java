@@ -100,4 +100,8 @@ public class Screen {
        int texNum = map[mapX][mapY] - 1;
 	   double wallX;
 
-       
+       if(side==1) {
+		    	wallX = (camera.xPos + ((mapY - camera.yPos + (1 - stepY) / 2) / rayDirY) * rayDirX);
+		    } else {
+		    	wallX = (camera.yPos + ((mapX - camera.xPos + (1 - stepX) / 2) / rayDirX) * rayDirY);
+		    }
