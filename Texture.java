@@ -8,6 +8,7 @@ public class Texture {
 	private String loc;
 	public final int SIZE;
 
+    // Constructor
     public Texture(String location, int size) {
 		loc = location;
 		SIZE = size;
@@ -15,6 +16,7 @@ public class Texture {
 		load();
 	}
 
+    // Load texture from file
     private void load() {
 		try {
 			BufferedImage image = ImageIO.read(new File(loc));
@@ -26,6 +28,7 @@ public class Texture {
 		}
 	}
 
+    // Static textures
     public static Texture wood = new Texture("assets/wood.png", 64);
 	public static Texture brick = new Texture("assets/brick.png", 64);
 	public static Texture bluestone = new Texture("assets/bluestone.png", 64);
