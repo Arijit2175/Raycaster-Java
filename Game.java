@@ -59,4 +59,9 @@ public class Game extends JFrame implements Runnable{
 		start();
 	}
     
+    private synchronized void start() {
+		running = true;
+		thread.start();
+	}
+
     
