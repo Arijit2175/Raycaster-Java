@@ -90,4 +90,9 @@ public class Screen {
 	  if(perpWallDist > 0) {lineHeight = Math.abs((int)(height / perpWallDist));}
 	  else {lineHeight = height; }
       
-      
+      int drawStart = -lineHeight/2+ height/2;
+		    if(drawStart < 0)
+		    	drawStart = 0;
+	  int drawEnd = lineHeight/2 + height/2;
+		    if(drawEnd >= height) 
+		    	drawEnd = height - 1;
