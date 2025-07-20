@@ -23,5 +23,10 @@ public class Screen {
 			if(pixels[i] != Color.gray.getRGB()) pixels[i] = Color.gray.getRGB();
 		}
 
+        for(int x=0; x<width; x=x+1) {
+			double cameraX = 2 * x / (double)(width) -1;
+		    double rayDirX = camera.xDir + camera.xPlane * cameraX;
+		    double rayDirY = camera.yDir + camera.yPlane * cameraX;
 
+            
     }
