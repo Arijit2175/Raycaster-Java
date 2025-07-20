@@ -28,5 +28,8 @@ public class Screen {
 		    double rayDirX = camera.xDir + camera.xPlane * cameraX;
 		    double rayDirY = camera.yDir + camera.yPlane * cameraX;
 
+            int mapX = (int)camera.xPos;
+		    int mapY = (int)camera.yPos;
+
             
     }
