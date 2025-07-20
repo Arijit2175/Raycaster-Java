@@ -119,4 +119,7 @@ public class Screen {
 		    	pixels[x + y*(width)] = color;
 		    }
 		}
-        
+
+        return pixels;
+    }
+}
