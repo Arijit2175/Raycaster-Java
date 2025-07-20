@@ -51,5 +51,13 @@ public class Camera implements KeyListener{
 			if(map[(int)xPos][(int)(yPos - yDir * MOVE_SPEED)]==0)
 				yPos-=yDir*MOVE_SPEED;
 		}
+        if(right) {
+			double oldxDir=xDir;
+			xDir=xDir*Math.cos(-ROTATION_SPEED) - yDir*Math.sin(-ROTATION_SPEED);
+			yDir=oldxDir*Math.sin(-ROTATION_SPEED) + yDir*Math.cos(-ROTATION_SPEED);
+			double oldxPlane = xPlane;
+			xPlane=xPlane*Math.cos(-ROTATION_SPEED) - yPlane*Math.sin(-ROTATION_SPEED);
+			yPlane=oldxPlane*Math.sin(-ROTATION_SPEED) + yPlane*Math.cos(-ROTATION_SPEED);
+		}
         
     }
