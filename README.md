@@ -45,20 +45,15 @@ RaycasterProject/
 1. **Clone or Download** the repository.
 
 2. **Compile the Java files**:
-
 ```
-
   javac Game.java
-
 ```
 
 3. **Run the main class**:
-
    ```
-
    java Game
-
    ```
+
 4. Use your keyboard to explore.
 
 ---
