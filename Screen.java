@@ -34,5 +34,9 @@ public class Screen {
             double sideDistX;
 		    double sideDistY;
 
+            double deltaDistX = Math.sqrt(1 + (rayDirY*rayDirY) / (rayDirX*rayDirX));
+		    double deltaDistY = Math.sqrt(1 + (rayDirX*rayDirX) / (rayDirY*rayDirY));
+		    double perpWallDist;
+
             
     }
