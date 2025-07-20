@@ -37,6 +37,7 @@ public class Game extends JFrame implements Runnable{
 			{1,1,1,1,1,1,1,4,4,4,4,4,4,4,4}
 		};
 
+        // Constructor
        public Game() {
 		thread = new Thread(this);
 		image = new BufferedImage(640, 480, BufferedImage.TYPE_INT_RGB);
@@ -59,6 +60,7 @@ public class Game extends JFrame implements Runnable{
 		start();
 	}
     
+    // Start and stop methods for the game loop
     private synchronized void start() {
 		running = true;
 		thread.start();
@@ -73,6 +75,7 @@ public class Game extends JFrame implements Runnable{
 		}
 	}
 
+    // Render method to draw the game screen
     public void render() {
 		BufferStrategy bs = getBufferStrategy();
 		if(bs == null) {
@@ -84,6 +87,7 @@ public class Game extends JFrame implements Runnable{
 		bs.show();
 	}
 
+    // Game loop that updates the game state and renders the screen
     public void run() {
 		long lastTime = System.nanoTime();
 		final double ns = 1000000000.0 / 60.0;
@@ -103,6 +107,7 @@ public class Game extends JFrame implements Runnable{
 		}
 	}
 
+    // Main method to start the game
     public static void main(String [] args) {
 		Game game = new Game();
 	}
