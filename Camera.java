@@ -15,4 +15,15 @@ public class Camera implements KeyListener{
 		yPlane = yp;
 	}
 
+    public void keyPressed(KeyEvent key) {
+		if((key.getKeyCode() == KeyEvent.VK_LEFT))
+			left = true;
+		if((key.getKeyCode() == KeyEvent.VK_RIGHT))
+			right = true;
+		if((key.getKeyCode() == KeyEvent.VK_UP))
+			forward = true;
+		if((key.getKeyCode() == KeyEvent.VK_DOWN))
+			back = true;
+	}
+
     
