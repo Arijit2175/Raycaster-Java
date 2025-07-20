@@ -85,12 +85,9 @@ Here's a preview of how the map may look like:
 Here are the references used for this project:
 
 - [Making a Basic 3D Engine](https://www.instructables.com/Making-a-Basic-3D-Engine-in-Java/) - For the process with the codes
-- [Wikipedia – Ray casting](https://en.wikipedia.org/wiki/Ray_casting)  
-  General overview of ray casting as a rendering technique.
-- [Java AWT KeyEvent Documentation](https://docs.oracle.com/javase/8/docs/api/java/awt/event/KeyEvent.html)  
-  Official documentation for keyboard input handling in Java.
-- [Stack Overflow – Basic Java Game Loop](https://stackoverflow.com/questions/31039816/how-to-create-a-basic-game-loop-in-java)  
-  Useful discussion on how to structure a simple game loop in Java for real-time rendering.
+- [Wikipedia – Ray casting](https://en.wikipedia.org/wiki/Ray_casting) - General overview of ray casting as a rendering technique.
+- [Java AWT KeyEvent Documentation](https://docs.oracle.com/javase/8/docs/api/java/awt/event/KeyEvent.html) - Official documentation for keyboard input handling in Java.
+- [Stack Overflow – Basic Java Game Loop](https://stackoverflow.com/questions/31039816/how-to-create-a-basic-game-loop-in-java) - Useful discussion on how to structure a simple game loop in Java for real-time rendering.
 
 ---
 <br>
