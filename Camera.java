@@ -37,4 +37,6 @@ public class Camera implements KeyListener{
 			back = false;
 	}
 
-    
+    public void update(int[][] map) {
+        
+    }
