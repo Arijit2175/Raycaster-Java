@@ -50,9 +50,9 @@ RaycasterProject/
 ```
 
 3. **Run the main class**:
-   ```
-   java Game
-   ```
+```
+java Game
+```
 
 4. Use your keyboard to explore.
 
