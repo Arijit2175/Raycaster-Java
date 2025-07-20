@@ -52,5 +52,16 @@ public class Screen {
 		    	stepX = 1;
 		    	sideDistX = (mapX + 1.0 - camera.xPos) * deltaDistX;
 		    }
+            if (rayDirY < 0)
+		    {
+		    	stepY = -1;
+		        sideDistY = (camera.yPos - mapY) * deltaDistY;
+		    }
+		    else
+		    {
+		    	stepY = 1;
+		        sideDistY = (mapY + 1.0 - camera.yPos) * deltaDistY;
+		    }
+
             
     }
