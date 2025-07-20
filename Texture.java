@@ -26,4 +26,8 @@ public class Texture {
 		}
 	}
 
-    
+    public static Texture wood = new Texture("assets/wood.png", 64);
+	public static Texture brick = new Texture("assets/brick.png", 64);
+	public static Texture bluestone = new Texture("assets/bluestone.png", 64);
+	public static Texture stone = new Texture("assets/greystone.png", 64);
+}
