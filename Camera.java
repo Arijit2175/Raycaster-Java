@@ -15,6 +15,7 @@ public class Camera implements KeyListener{
 		yPlane = yp;
 	}
 
+    // KeyListener methods
     public void keyPressed(KeyEvent key) {
 		if((key.getKeyCode() == KeyEvent.VK_A))
 			left = true;
@@ -26,6 +27,7 @@ public class Camera implements KeyListener{
 			back = true;
 	}
 
+    // KeyListener methods
     public void keyReleased(KeyEvent key) {
 		if((key.getKeyCode() == KeyEvent.VK_A))
 			left = false;
@@ -37,6 +39,7 @@ public class Camera implements KeyListener{
 			back = false;
 	}
 
+    // KeyListener methods
     public void update(int[][] map) {
         if(forward) {
 			if(map[(int)(xPos + xDir * MOVE_SPEED)][(int)yPos] == 0) {
@@ -68,6 +71,8 @@ public class Camera implements KeyListener{
 			yPlane=oldxPlane*Math.sin(ROTATION_SPEED) + yPlane*Math.cos(ROTATION_SPEED);
 		}
     }
+
+    // KeyListener methods
     public void keyTyped(KeyEvent arg0) {
 		
 	}
