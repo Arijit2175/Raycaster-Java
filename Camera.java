@@ -68,3 +68,7 @@ public class Camera implements KeyListener{
 			yPlane=oldxPlane*Math.sin(ROTATION_SPEED) + yPlane*Math.cos(ROTATION_SPEED);
 		}
     }
+    public void keyTyped(KeyEvent arg0) {
+		
+	}
+}
