@@ -37,4 +37,26 @@ public class Game extends JFrame implements Runnable{
 			{1,1,1,1,1,1,1,4,4,4,4,4,4,4,4}
 		};
 
-        
+       public Game() {
+		thread = new Thread(this);
+		image = new BufferedImage(640, 480, BufferedImage.TYPE_INT_RGB);
+		pixels = ((DataBufferInt)image.getRaster().getDataBuffer()).getData();
+		textures = new ArrayList<Texture>();
+		textures.add(Texture.wood);
+		textures.add(Texture.brick);
+		textures.add(Texture.bluestone);
+		textures.add(Texture.stone);
+		camera = new Camera(4.5, 4.5, 1, 0, 0, -.66);
+		screen = new Screen(map, mapWidth, mapHeight, textures, 640, 480);
+		addKeyListener(camera);
+		setSize(640, 480);
+		setResizable(false);
+		setTitle("3D Engine");
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setBackground(Color.black);
+		setLocationRelativeTo(null);
+		setVisible(true);
+		start();
+	}
+    
+    
