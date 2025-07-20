@@ -64,7 +64,6 @@ public class Screen {
 		    }
 
             while(!hit) {
-		    	//Jump to next square
 		    	if (sideDistX < sideDistY)
 		        {
 		    		sideDistX += deltaDistX;
@@ -79,3 +78,9 @@ public class Screen {
 		        }
                 if(map[mapX][mapY] > 0) hit = true;
     }
+
+     if(side==0)
+		    	perpWallDist = Math.abs((mapX - camera.xPos + (1 - stepX) / 2) / rayDirX);
+	 else
+		    	perpWallDist = Math.abs((mapY - camera.yPos + (1 - stepY) / 2) / rayDirY);
+        
