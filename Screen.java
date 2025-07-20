@@ -105,3 +105,10 @@ public class Screen {
 		    } else {
 		    	wallX = (camera.yPos + ((mapX - camera.xPos + (1 - stepX) / 2) / rayDirX) * rayDirY);
 		    }
+        
+       wallX-=Math.floor(wallX);
+		int texX = (int)(wallX * (textures.get(texNum).SIZE));
+		if(side == 0 && rayDirX > 0) texX = textures.get(texNum).SIZE - texX - 1;
+		if(side == 1 && rayDirY < 0) texX = textures.get(texNum).SIZE - texX - 1;
+        
+        
