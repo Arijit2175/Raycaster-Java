@@ -6,6 +6,7 @@ public class Screen {
 	public int mapWidth, mapHeight, width, height;
 	public ArrayList<Texture> textures;
 	
+    // Constructor
 	public Screen(int[][] m, int mapW, int mapH, ArrayList<Texture> tex, int w, int h) {
 		map = m;
 		mapWidth = mapW;
@@ -15,6 +16,7 @@ public class Screen {
 		height = h;
 	}
 
+    // Update screen pixels based on camera position and direction
     public int[] update(Camera camera, int[] pixels) {
         for(int n=0; n<pixels.length/2; n++) {
 			if(pixels[n] != Color.DARK_GRAY.getRGB()) pixels[n] = Color.DARK_GRAY.getRGB(); 
@@ -120,6 +122,7 @@ public class Screen {
 		    }
 		}
 
+        // Return the updated pixel array
         return pixels;
     }
 }
