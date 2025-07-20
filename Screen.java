@@ -96,3 +96,8 @@ public class Screen {
 	  int drawEnd = lineHeight/2 + height/2;
 		    if(drawEnd >= height) 
 		    	drawEnd = height - 1;
+       
+       int texNum = map[mapX][mapY] - 1;
+	   double wallX;
+
+       
