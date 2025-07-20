@@ -77,5 +77,5 @@ public class Screen {
 		        	mapY += stepY;
 		        	side = 1;
 		        }
-                
+                if(map[mapX][mapY] > 0) hit = true;
     }
