@@ -84,4 +84,23 @@ public class Game extends JFrame implements Runnable{
 		bs.show();
 	}
 
+    public void run() {
+		long lastTime = System.nanoTime();
+		final double ns = 1000000000.0 / 60.0;
+		double delta = 0;
+		requestFocus();
+		while(running) {
+			long now = System.nanoTime();
+			delta = delta + ((now-lastTime) / ns);
+			lastTime = now;
+			while (delta >= 1)
+			{
+				screen.update(camera, pixels);
+				camera.update(map);
+				delta--;
+			}
+			render();
+		}
+	}
+
     
