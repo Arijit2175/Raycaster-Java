@@ -26,4 +26,15 @@ public class Camera implements KeyListener{
 			back = true;
 	}
 
+    public void keyReleased(KeyEvent key) {
+		if((key.getKeyCode() == KeyEvent.VK_LEFT))
+			left = false;
+		if((key.getKeyCode() == KeyEvent.VK_RIGHT))
+			right = false;
+		if((key.getKeyCode() == KeyEvent.VK_UP))
+			forward = false;
+		if((key.getKeyCode() == KeyEvent.VK_DOWN))
+			back = false;
+	}
+
     
