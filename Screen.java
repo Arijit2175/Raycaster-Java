@@ -31,5 +31,8 @@ public class Screen {
             int mapX = (int)camera.xPos;
 		    int mapY = (int)camera.yPos;
 
+            double sideDistX;
+		    double sideDistY;
+
             
     }
